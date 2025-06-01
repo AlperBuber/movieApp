@@ -1,0 +1,137 @@
+.title {
+  color: brown;
+}
+
+.new {
+  border: 1px solid red;
+  padding: 10px;
+}
+
+.f30 {
+  font-size: 30px;
+}
+.card-title h4 {
+  font-size: 16px;
+}
+.card-text {
+  max-height: 7.5em; /* Satır yüksekliğine göre ayarla (7 satır x ~1.5em) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;
+}
+
+#movie-details-container {
+  /* max-height: calc(100vh - 57px); */
+  max-height: 77vh;
+}
+.active {
+  color: #333;
+  font-weight: bold;
+}
+.hover:hover {
+  opacity: 0.7;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Burada tek satır RGBA: rengi ve şeffaflık (0.0–1.0) */
+  background-color: rgba(0, 0, 0, 0.484);
+}
+.homePage-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Burada tek satır RGBA: rengi ve şeffaflık (0.0–1.0) */
+  background-color: rgba(18, 19, 22, 0.484);
+}
+#movie-details-img {
+  max-height: 500px;
+}
+.movie-details-title {
+  font-size: 30px;
+  font-weight: bold;
+
+  margin-bottom: 10px;
+}
+
+#similar-movie-list {
+  background-color: transparent;
+}
+
+#home {
+  background-image: url("https://picsum.photos/1080/720?random=1");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+
+  min-height: 400px;
+}
+#crew-list {
+}
+
+#actor-img {
+  max-height: 200px;
+}
+#actor-list {
+  flex-wrap: wrap;
+}
+
+#home-movie-list {
+  margin-top: 170px;
+}
+
+#cast-details-bg {
+  background-color: #333;
+}
+
+#cast-image {
+  max-height: 100px;
+}
+
+.noMiniImage {
+  max-width: 66px;
+  min-height: 80px;
+}
+
+.actor-bio {
+  max-height: 15em; /* Satır yüksekliğine göre ayarla (7 satır x ~1.5em) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 9;
+  -webkit-box-orient: vertical;
+}
+.movie-review {
+  max-height: 10em; /* Satır yüksekliğine göre ayarla (7 satır x ~1.5em) */
+  overflow: hidden;
+  text-overflow: ellipsis;
+  display: -webkit-box;
+  -webkit-line-clamp: 6;
+  -webkit-box-orient: vertical;
+}
+.movie-review.expanded {
+  max-height: none; /* ya da yetecek kadar büyük bir değer */
+  -webkit-line-clamp: none;
+}
+
+.actor-bio.expanded {
+  max-height: none; /* ya da yetecek kadar büyük bir değer */
+  -webkit-line-clamp: none;
+}
+
+.actor-details-read-more {
+  color: #0091ff;
+}
+.actor-details-read-more:hover {
+  text-decoration: underline;
+  color: #00ff9d;
+}
